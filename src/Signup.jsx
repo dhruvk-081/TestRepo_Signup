@@ -21,7 +21,12 @@ const Signup = () => {
         setError("Error: Invalid email format.");
       return;
     }
-    
+
+    // if (!emailPattern.test(email)) {
+    //     setError("Error: Invalid email format.");
+    //   return;
+    // }
+
     if (password !== cPass) {
       setError("Error: Please Make sure your passwords and confirm passwords match!");
       return;
